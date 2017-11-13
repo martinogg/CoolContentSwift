@@ -97,8 +97,9 @@
 		EE09865E1FB9D6B9002E2890 /* CoolContent */ = {
 			isa = PBXGroup;
 			children = (
+				EE09868E1FBA0DC4002E2890 /* ViewModel */,
+				EE09868D1FBA0D9F002E2890 /* ViewController */,
 				EE09865F1FB9D6B9002E2890 /* AppDelegate.swift */,
-				EE0986611FB9D6B9002E2890 /* ViewController.swift */,
 				EE0986631FB9D6B9002E2890 /* Main.storyboard */,
 				EE0986661FB9D6B9002E2890 /* Assets.xcassets */,
 				EE0986681FB9D6B9002E2890 /* LaunchScreen.storyboard */,
@@ -123,6 +124,21 @@
 				EE0986811FB9D6B9002E2890 /* Info.plist */,
 			);
 			path = CoolContentUITests;
+			sourceTree = "<group>";
+		};
+		EE09868D1FBA0D9F002E2890 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE0986611FB9D6B9002E2890 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EE09868E1FBA0DC4002E2890 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
