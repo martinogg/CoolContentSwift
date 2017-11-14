@@ -20,6 +20,8 @@
 		EE0986981FBA20F5002E2890 /* ViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0986971FBA20F5002E2890 /* ViewLoader.swift */; };
 		EE09869A1FBA2196002E2890 /* ViewLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0986991FBA2196002E2890 /* ViewLoaderTests.swift */; };
 		EE09869C1FBA221D002E2890 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869B1FBA221D002E2890 /* RouterTests.swift */; };
+		EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869D1FBB4AFB002E2890 /* ViewModel.swift */; };
+		EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		EE0986971FBA20F5002E2890 /* ViewLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoader.swift; sourceTree = "<group>"; };
 		EE0986991FBA2196002E2890 /* ViewLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoaderTests.swift; sourceTree = "<group>"; };
 		EE09869B1FBA221D002E2890 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
+		EE09869D1FBB4AFB002E2890 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				EE0986761FB9D6B9002E2890 /* Info.plist */,
 				EE0986991FBA2196002E2890 /* ViewLoaderTests.swift */,
 				EE09869B1FBA221D002E2890 /* RouterTests.swift */,
+				EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */,
 			);
 			path = CoolContentTests;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				EE0986911FBA12C7002E2890 /* ContentViewModel.swift */,
+				EE09869D1FBB4AFB002E2890 /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -307,6 +313,7 @@
 				EE0986901FBA12A4002E2890 /* ContentViewController.swift in Sources */,
 				EE0986601FB9D6B9002E2890 /* AppDelegate.swift in Sources */,
 				EE0986981FBA20F5002E2890 /* ViewLoader.swift in Sources */,
+				EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +323,7 @@
 			files = (
 				EE0986751FB9D6B9002E2890 /* CoolContentTests.swift in Sources */,
 				EE09869C1FBA221D002E2890 /* RouterTests.swift in Sources */,
+				EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */,
 				EE09869A1FBA2196002E2890 /* ViewLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

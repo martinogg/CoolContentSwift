@@ -16,7 +16,7 @@ class ContentViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    required init(viewModel: ContentViewModelProtocol) {
+    init(viewModel: ContentViewModelProtocol) {
         self.viewModel = viewModel;
         super.init(nibName: nil, bundle: nil)
     }

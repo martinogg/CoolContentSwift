@@ -10,11 +10,10 @@ import Foundation
 import UIKit
 
 protocol ViewLoaderProtocol {
-    init(router: RouterProtocol)
     func getView(withDict dict: Dictionary<String, Any>, callback: ((_ vc: UIViewController) -> Void))
 }
 
-class ViewLoader {
+class ViewLoader: ViewLoaderProtocol {
     private let router: RouterProtocol;
     
     init(router: RouterProtocol) {
