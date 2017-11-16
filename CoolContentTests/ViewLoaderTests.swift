@@ -24,17 +24,21 @@ class ViewLoaderTests: XCTestCase {
     func testSimpleDictRequest() {
         
         class MockRouter: RouterProtocol {
-            let uiTestVC = UIViewController.init();
+            let uiTestVC = UIViewController.init()
             func getContentViewController() -> UIViewController {
-                return uiTestVC;
+                return uiTestVC
             }
         }
         
-        let mockRouter = MockRouter.init();
+        let mockRouter = MockRouter.init()
         
-        let testViewLoader = ViewLoader.init(router: mockRouter);
+        let testViewLoader = ViewLoader.init(router: mockRouter)
         
-        let dict = [String: Any]();
+        guard let dict = ViewLoader.getDictFromFile() else {
+            XCTFail()
+            return
+        }
+        
         var callbackCalled = false;
         
         testViewLoader.getView(withDict: dict, callback: {(vc: UIViewController) in
@@ -44,6 +48,20 @@ class ViewLoaderTests: XCTestCase {
         });
         
         XCTAssert(callbackCalled)
+    }
+    
+    func testGetDictFromFile() {
+        guard let dictToTest = ViewLoader.getDictFromFile() else {
+            XCTFail()
+            return
+        }
+        
+        XCTAssert(dictToTest["type"] as! String == "local_list")
+        XCTAssert(dictToTest["text"] as! String == "Game On Scotland")
+        XCTAssert(dictToTest["bgnd_color"] as! String == "#ffffff")
+        
+        let itemsToTest = dictToTest["items"] as! NSArray
+        XCTAssert(itemsToTest.count == 3)
     }
 
     

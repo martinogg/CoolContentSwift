@@ -17,7 +17,11 @@ class Router: RouterProtocol {
     
     func getContentViewController() -> UIViewController {
         
-        return ContentViewController.init(viewModel: ContentViewModel.init());
+        guard let jsonDict = ViewLoader.getDictFromFile() else {
+            fatalError("jsonDict creation fail")
+        }
+        
+        return ContentViewController.init(viewModel: ContentViewModel.init(jsonDict));
     }
 
 }

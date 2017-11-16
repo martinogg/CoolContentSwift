@@ -13,5 +13,10 @@ protocol ContentViewModelProtocol {
 }
 
 class ContentViewModel: ContentViewModelProtocol {
+    let content: [String: Any]
+    
+    init (_ content_: [String: Any]) {
+        self.content = content_
+    }
     
 }

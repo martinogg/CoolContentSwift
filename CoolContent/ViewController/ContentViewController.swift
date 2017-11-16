@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ContentViewController: UIViewController {
+class ContentViewController: UITableViewController {
     var viewModel: ContentViewModelProtocol?
     
     required init?(coder aDecoder: NSCoder) {

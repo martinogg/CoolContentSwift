@@ -22,6 +22,7 @@
 		EE09869C1FBA221D002E2890 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869B1FBA221D002E2890 /* RouterTests.swift */; };
 		EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869D1FBB4AFB002E2890 /* ViewModel.swift */; };
 		EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */; };
+		EE0986A21FBB6D52002E2890 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0986A11FBB6D52002E2890 /* config.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EE09869B1FBA221D002E2890 /* RouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTests.swift; sourceTree = "<group>"; };
 		EE09869D1FBB4AFB002E2890 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		EE0986A11FBB6D52002E2890 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = config/config.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		EE09865E1FB9D6B9002E2890 /* CoolContent */ = {
 			isa = PBXGroup;
 			children = (
+				EE0986A11FBB6D52002E2890 /* config.json */,
 				EE0986931FBA12E5002E2890 /* Router */,
 				EE09868E1FBA0DC4002E2890 /* ViewModel */,
 				EE09868D1FBA0D9F002E2890 /* ViewController */,
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE09866A1FB9D6B9002E2890 /* LaunchScreen.storyboard in Resources */,
+				EE0986A21FBB6D52002E2890 /* config.json in Resources */,
 				EE0986671FB9D6B9002E2890 /* Assets.xcassets in Resources */,
 				EE0986651FB9D6B9002E2890 /* Main.storyboard in Resources */,
 			);

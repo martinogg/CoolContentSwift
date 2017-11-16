@@ -1,0 +1,39 @@
+{
+    "targetVersion": 3,
+    "content": {
+        "id": "0000",
+        "type": "local_list",
+        "text": "Game On Scotland",
+        "bgnd_color": "#ffffff",
+        "items": [
+                  {
+                  "type": "image_list_item",
+                  "id": "0000",
+                  "url": "asset:intropic1",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff"
+                  },
+                  {
+                  "type": "text_list_item",
+                  "id": "0000",
+                  "displaytext": "Latest news and reviews from the games industry in Scotland",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000"
+                  },
+                  {
+                  "type": "imagebutton_list_item",
+                  "id": "0000",
+                  "url": "asset:startbutton1",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "target": {
+                  "id": "0000",
+                  "type": "config_external_url",
+                  "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/mh1.json",
+                  "unusedurl": "http://www.martinogg.com/test/newsapp/mh1.json"
+                  }
+                  }
+                  ]
+    }
+}
