@@ -21,7 +21,9 @@ class Router: RouterProtocol {
             fatalError("jsonDict creation fail")
         }
         
-        return ContentViewController.init(viewModel: ContentViewModel.init(jsonDict));
+        let tableViewAdapter = ContentTableViewAdapter.init(jsonDict)
+        
+        return ContentViewController.init(viewModel: ContentViewModel.init(jsonDict), tableViewAdapter: tableViewAdapter);
     }
 
 }

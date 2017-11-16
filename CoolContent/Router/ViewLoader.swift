@@ -25,7 +25,7 @@ class ViewLoader: ViewLoaderProtocol {
         callback(router.getContentViewController())        
     }
     
-    static let currentVersion = 3 //dddd V3
+    static let currentVersion = 3 // V3
     
     static public func getDictFromFile() -> Dictionary<String, Any>? {
         

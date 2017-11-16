@@ -23,6 +23,8 @@
 		EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869D1FBB4AFB002E2890 /* ViewModel.swift */; };
 		EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */; };
 		EE0986A21FBB6D52002E2890 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0986A11FBB6D52002E2890 /* config.json */; };
+		EEF36F871FBDC1540084C79E /* ContentTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F861FBDC1540084C79E /* ContentTableViewAdapter.swift */; };
+		EEF36F891FBDC18E0084C79E /* ContentTableViewAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		EE09869D1FBB4AFB002E2890 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		EE0986A11FBB6D52002E2890 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = config/config.json; sourceTree = "<group>"; };
+		EEF36F861FBDC1540084C79E /* ContentTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewAdapter.swift; sourceTree = "<group>"; };
+		EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewAdapterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 		EE09865E1FB9D6B9002E2890 /* CoolContent */ = {
 			isa = PBXGroup;
 			children = (
+				EEF36F851FBDC1280084C79E /* TableViewAdapter */,
 				EE0986A11FBB6D52002E2890 /* config.json */,
 				EE0986931FBA12E5002E2890 /* Router */,
 				EE09868E1FBA0DC4002E2890 /* ViewModel */,
@@ -136,6 +141,7 @@
 				EE0986991FBA2196002E2890 /* ViewLoaderTests.swift */,
 				EE09869B1FBA221D002E2890 /* RouterTests.swift */,
 				EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */,
+				EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */,
 			);
 			path = CoolContentTests;
 			sourceTree = "<group>";
@@ -174,6 +180,14 @@
 				EE0986971FBA20F5002E2890 /* ViewLoader.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		EEF36F851FBDC1280084C79E /* TableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				EEF36F861FBDC1540084C79E /* ContentTableViewAdapter.swift */,
+			);
+			path = TableViewAdapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +332,7 @@
 				EE0986601FB9D6B9002E2890 /* AppDelegate.swift in Sources */,
 				EE0986981FBA20F5002E2890 /* ViewLoader.swift in Sources */,
 				EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */,
+				EEF36F871FBDC1540084C79E /* ContentTableViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF36F891FBDC18E0084C79E /* ContentTableViewAdapterTests.swift in Sources */,
 				EE0986751FB9D6B9002E2890 /* CoolContentTests.swift in Sources */,
 				EE09869C1FBA221D002E2890 /* RouterTests.swift in Sources */,
 				EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */,
