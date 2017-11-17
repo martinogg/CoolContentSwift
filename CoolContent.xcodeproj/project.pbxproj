@@ -29,6 +29,9 @@
 		EEF36F8E1FBDFA170084C79E /* TextListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F8D1FBDFA170084C79E /* TextListItemView.swift */; };
 		EEF36F901FBDFA280084C79E /* ImageButtonListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F8F1FBDFA280084C79E /* ImageButtonListItemView.swift */; };
 		EEF36F921FBDFA580084C79E /* CoolContentListItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F911FBDFA580084C79E /* CoolContentListItemProtocol.swift */; };
+		EEF36F941FBF3DED0084C79E /* BasicListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F931FBF3DED0084C79E /* BasicListItemView.swift */; };
+		EEF36F971FBF46250084C79E /* configtest.json in Resources */ = {isa = PBXBuildFile; fileRef = EEF36F951FBF41670084C79E /* configtest.json */; };
+		EEF36F991FBF523D0084C79E /* ContentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F981FBF523D0084C79E /* ContentViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		EEF36F8D1FBDFA170084C79E /* TextListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextListItemView.swift; sourceTree = "<group>"; };
 		EEF36F8F1FBDFA280084C79E /* ImageButtonListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageButtonListItemView.swift; sourceTree = "<group>"; };
 		EEF36F911FBDFA580084C79E /* CoolContentListItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolContentListItemProtocol.swift; sourceTree = "<group>"; };
+		EEF36F931FBF3DED0084C79E /* BasicListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicListItemView.swift; sourceTree = "<group>"; };
+		EEF36F951FBF41670084C79E /* configtest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configtest.json; sourceTree = "<group>"; };
+		EEF36F981FBF523D0084C79E /* ContentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,8 @@
 				EE09869B1FBA221D002E2890 /* RouterTests.swift */,
 				EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */,
 				EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */,
+				EEF36F951FBF41670084C79E /* configtest.json */,
+				EEF36F981FBF523D0084C79E /* ContentViewModelTests.swift */,
 			);
 			path = CoolContentTests;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				EEF36F8D1FBDFA170084C79E /* TextListItemView.swift */,
 				EEF36F8F1FBDFA280084C79E /* ImageButtonListItemView.swift */,
 				EEF36F911FBDFA580084C79E /* CoolContentListItemProtocol.swift */,
+				EEF36F931FBF3DED0084C79E /* BasicListItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF36F971FBF46250084C79E /* configtest.json in Resources */,
 				EE09866A1FB9D6B9002E2890 /* LaunchScreen.storyboard in Resources */,
 				EE0986A21FBB6D52002E2890 /* config.json in Resources */,
 				EE0986671FB9D6B9002E2890 /* Assets.xcassets in Resources */,
@@ -356,6 +366,7 @@
 				EEF36F901FBDFA280084C79E /* ImageButtonListItemView.swift in Sources */,
 				EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */,
 				EEF36F8C1FBDFA060084C79E /* ImageListItemView.swift in Sources */,
+				EEF36F941FBF3DED0084C79E /* BasicListItemView.swift in Sources */,
 				EEF36F871FBDC1540084C79E /* ContentTableViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +377,7 @@
 			files = (
 				EEF36F891FBDC18E0084C79E /* ContentTableViewAdapterTests.swift in Sources */,
 				EE0986751FB9D6B9002E2890 /* CoolContentTests.swift in Sources */,
+				EEF36F991FBF523D0084C79E /* ContentViewModelTests.swift in Sources */,
 				EE09869C1FBA221D002E2890 /* RouterTests.swift in Sources */,
 				EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */,
 				EE09869A1FBA2196002E2890 /* ViewLoaderTests.swift in Sources */,

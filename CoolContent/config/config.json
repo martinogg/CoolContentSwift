@@ -3,35 +3,1285 @@
     "content": {
         "id": "0000",
         "type": "local_list",
-        "text": "Game On Scotland",
-        "bgnd_color": "#ffffff",
+        "text": "Game On Scotland!",
+        "bgnd_color": "#ebebeb",
         "items": [
                   {
-                  "type": "image_list_item",
+                  "type": "basic_list_item",
                   "id": "0000",
-                  "url": "asset:intropic1",
-                  "use_bgnd_color": false,
-                  "bgnd_color": "#ffffff"
-                  },
-                  {
-                  "type": "text_list_item",
-                  "id": "0000",
-                  "displaytext": "Latest news and reviews from the games industry in Scotland",
+                  "icon": "unusedIcon.png",
+                  "text": "Trailers",
                   "use_bgnd_color": false,
                   "bgnd_color": "#ffffff",
-                  "text_color": "#000000"
-                  },
-                  {
-                  "type": "imagebutton_list_item",
-                  "id": "0000",
-                  "url": "asset:startbutton1",
-                  "use_bgnd_color": false,
-                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000",
                   "target": {
                   "id": "0000",
-                  "type": "config_external_url",
-                  "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/mh1.json",
-                  "unusedurl": "http://www.martinogg.com/test/newsapp/mh1.json"
+                  "type": "local_list",
+                  "text": "Trailers",
+                  "bgnd_color": "#ffffff",
+                  "items": [
+                            {
+                            "type": "text_list_item",
+                            "id": "0000",
+                            "displaytext": "The latest trailers from game companies around Scotland.",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000"
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Outplay Entertainment",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Outplay Entertainment",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailers from Outplay Entertainment.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Castle Creeps",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Castle Creeps",
+                                      "url": "https://www.youtube.com/embed/CsLZlwWYNJo?rel=0&autoplay=1"
+                                      }
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Bubble Blaze",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Bubble Blaze",
+                                      "url": "https://www.youtube.com/embed/MlGEQNLVwJQ?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Tag Games",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Tag Games",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailers from Tag Games.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Angry Birds Action",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Angry Birds Action",
+                                      "url": "https://www.youtube.com/embed/88T6lek6I3E?rel=0&autoplay=1"
+                                      }
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Prison Architect",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Prison Architect",
+                                      "url": "https://www.youtube.com/embed/o8c20XZq5TI?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "4J Studios",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "4J Studios",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from 4J Studio.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Minecraft: XBOX 360 Edition",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Minecraft: XBOX 360 Edition",
+                                      "url": "https://www.youtube.com/embed/BIdQpQ5GqD0?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Stormcloud Games",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Stormcloud Games",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from Stormcloud Games.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Brut@l",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Brut@l",
+                                      "url": "https://www.youtube.com/embed/oIs72kNF0-w?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Blazing Griffin",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Blazing Griffin",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from Blazing Griffin.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "The Ship: Remastered",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "The Ship: Remastered",
+                                      "url": "https://www.youtube.com/embed/6mAk-O67VcA?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Fox Wot I Drew",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Fox Wot I Drew",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from A Fox Wot I Drew.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Baum",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Baum",
+                                      "url": "https://www.youtube.com/embed/ZS-mVVgP2iM?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Hunted Cow",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Hunted Cow",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from Hunted Cow.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Eldevin",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Eldevin",
+                                      "url": "https://www.youtube.com/embed/KUKRcDVqq_g?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Ruffian",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Ruffian",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailers from Ruffian.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Fragmental",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Fragmental",
+                                      "url": "https://www.youtube.com/embed/G1HSDd9wgYA?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Stand Out Games Studio",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Stand Out Games Studio",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Latest Trailer from Stand Out Games Studio.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "Quickslide",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "Quickslide",
+                                      "url": "https://www.youtube.com/embed/qFeryWgBX3c?rel=0&autoplay=1"
+                                      }
+                                      }
+                                      ]
+                            }
+                            }
+                            ]
+                  }
+                  },
+                  {
+                  "type": "basic_list_item",
+                  "id": "0000",
+                  "icon": "unusedIcon.png",
+                  "text": "News",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000",
+                  "target": {
+                  "id": "0000",
+                  "type": "local_list",
+                  "text": "News",
+                  "bgnd_color": "#ffffff",
+                  "items": [
+                            {
+                            "type": "text_list_item",
+                            "id": "0000",
+                            "displaytext": "Gaming news and information around Scotland.",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000"
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Dare",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "Dare",
+                            "url": "http://dareacademy.co.uk/"
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Tax Relief (Coming soon)",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Tax Relief (Coming soon)",
+                            "bgnd_color": "#ffffff",
+                            "items": []
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "IGDA",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "IGDA",
+                            "url": "https://www.igda.org/"
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "SDI",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "SDI",
+                            "url": "https://www.sdi.co.uk/"
+                            }
+                            }
+                            ]
+                  }
+                  },
+                  {
+                  "type": "basic_list_item",
+                  "id": "0000",
+                  "icon": "unusedIcon.png",
+                  "text": "Upcoming Events",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000",
+                  "target": {
+                  "id": "0000",
+                  "type": "local_list",
+                  "text": "Upcoming Events",
+                  "bgnd_color": "#ffffff",
+                  "items": [
+                            {
+                            "type": "text_list_item",
+                            "id": "0000",
+                            "displaytext": "Upcoming events & expos happening around Scotland.",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000"
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Dundee Indiefest (Coming Soon)\t",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Dundee Indiefest (Coming Soon)\t",
+                            "bgnd_color": "#ffffff",
+                            "items": []
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Xpo North",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "Xpo North",
+                            "url": "https://xponorth.co.uk/"
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "4TG Game Con",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "4TG Game Con",
+                            "url": "http://www.4thegamers.co.uk/"
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Play Expo Glasgow",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "Play Expo Glasgow",
+                            "url": "https://www.playexpoglasgow.com/"
+                            }
+                            }
+                            ]
+                  }
+                  },
+                  {
+                  "type": "basic_list_item",
+                  "id": "0000",
+                  "icon": "unusedIcon.png",
+                  "text": "Directory",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000",
+                  "target": {
+                  "id": "0000",
+                  "type": "local_list",
+                  "text": "Directory",
+                  "bgnd_color": "#ffffff",
+                  "items": [
+                            {
+                            "type": "text_list_item",
+                            "id": "0000",
+                            "displaytext": "An A - Z of game companies around Scotland.",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000"
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "4J Studios",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "4J Studios",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/4jstudios.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "4J Studios is a game development studio established in 2005, based in Scotland, with offices in East Linton and Dundee.\\n\\n4J develop products for all popular console game systems including Microsoft's Xbox 360, Sony's PlayStation3, and PSP; as well as Nintendo's Wii and DS systems, and Apple's iPad and iPhone.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.4jstudios.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.4jstudios.com",
+                                      "url": "http://www.4jstudios.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Blazing Griffin",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Blazing Griffin",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/blazinggriffin.jpg",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Founded in 2011 as a game development studio, the company has grown from a team of three to a group of companies including a game development, film production and television post-production studios with 25 staff based in Edinburgh and Glasgow.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.blazinggriffin.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.blazinggriffin.com",
+                                      "url": "http://www.blazinggriffin.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Cobra Mobile",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Cobra Mobile",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/cobragames.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Cobra Mobile is an international game developer and publisher based in Dundee, Scotland.\\n\\nCobra has created a wide range of smash-hit games, including the totally awesome iBomber series, Red's Kingdom, Let's Go Rocket, Cobi Hoops and LEGO Star Wars: Micro Fighters to name a few.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.cobramobile.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.cobramobile.com",
+                                      "url": "http://www.cobramobile.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "DeuXality",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "DeuXality",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/deuxality.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "DeuXality Games is a global company with team members spanning 3 continents and 5 countries. We are focused on delivering high-end user experiences which lately have included the flourishing Virtual Reality and Augmented Reality markets.\\n\\nDeuXality started out building Games and Apps for the leading mobile and tablet markets. Our first game \"1,000 Doors: the Quiz\" went to Number One on iPhone in the US and Number One on iPad in Canada.\\n\\nIn the last 18 months, DeuXality has been working alongside some of the leading VR companies in the UK on several bespoke VR experiences as well as delivering AR and VR to educational establishments and Museums in and around Scotland. DeuXality are exceptionally well placed and connected to deliver great end-user products to all corners of the world.\\n\\nLast year DeuXality worked with \"Groove Festival\" and \"Movement Music\" a group of DJs, in order to deliver the worlds first streaming, mixed reality webcast, utilising Vive, Go-pro, Green screen and a bespoke Unity built system to put the DJs inside the Virtual environment.\\n\\nWe recently completed a Hololens project with Nissan and Microsoft, along with our partners in Newcastle to showcase the latest tech of both MS and Nissan's Leaf electric vehicle.\\n\\nEducation and Gamification is at the core of everything that we do. We truly believe that is fun is the best way to learn!",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.games.deuxality.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.games.deuxality.com",
+                                      "url": "http://www.games.deuxality.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Fox Wot I Drew",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Fox Wot I Drew",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/afoxwotidrew.jpg",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "We are comprised of 3 developers from various parts of the UK, with talent from Norwich University of the Arts, and the University of Abertay Dundee.\\n\\nOriginally coming together to participate in Dare 2014, we soon became close friends and managed to create a prototype that was good enough to win us \"Design in Action Award for Commercial Potential\".\\n\\nThis money has allowed us to set up our own games company to continue working on our original prototype - \"Baum\" - which will be released in 2015.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "afoxwotidrew.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "afoxwotidrew.com",
+                                      "url": "http://afoxwotidrew.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Guerilla Tea",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Guerilla Tea",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/guerillatea.jpg",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Guerilla Tea Games is an award winning independent games developer. We work with a range of game publishers, brand owners and digital agencies to create exciting experiences on a range of platforms.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.guerillatea.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.guerillatea.com",
+                                      "url": "http://www.guerillatea.com"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Hunted Cow",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Hunted Cow",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/huntedcow.jpg",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Hunted Cow Studios is a leading game developer and publisher which was founded in 2003. Their most popular browser game is Fallen Sword which has attracted over four million players since its launch in 2006.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.huntedcow.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.huntedcow.com",
+                                      "url": "https://www.huntedcow.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Outplay Entertainment",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Outplay Entertainment",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/outplay.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Outplay Entertainment is a leading developer of innovative games for smartphones, tablets, and social networks. Recognized for their focus on quality and engaging gameplay, Outplay has created a portfolio of successful casual and mid-core titles under the Outplay and Bite Size Games brands, in addition to those produced in collaboration with other leading publishers. ",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.outplay.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.outplay.com",
+                                      "url": "https://outplay.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Ruffian",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Ruffian",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/ruffian.jpg",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Ruffian Games was formed in April 2008 by three industry veterans â€” Gary Liddon, Billy Thomson & Gareth Noyce â€” and is based in Dundee, at the very heart of Scotlandâ€™s game development community. Our studio employs a team of highly experienced developers who have worked on titles spanning three decades of the games industry, including: Nike+ Kinect Training, Star Wars Kinect, Quarrel, Crackdown & Crackdown 2, Fable 2, Project Gotham Racing 3, Manhunt, Grand Theft Auto, Body Harvest, Mortal Kombat and many, many more.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.ruffiangames.com ",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.ruffiangames.com ",
+                                      "url": "http://www.ruffiangames.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Stand Out Games Studio",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Stand Out Games Studio",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/standoutgamesstudio.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Stand Out Games is a small independent games company situated in sunny Dundee, developing the latest in Virtual Reality gaming and video experience. Formed in May 2013, our small team of graduate media students will bring new and exciting ideas to the world of gaming and enjoy learning about new methods in design and player interactivity. ",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.standoutgames.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.standoutgames.com ",
+                                      "url": "http://www.standoutgames.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Stormcloud Games",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Stormcloud Games",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/stormcloudgames.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Stormcloud Games is an award-winning games studio that creates licensed and original games for mobile, console, PC and VR.\\n\\nOur previous titles include Brut@l a modern re-imagining of the classic ASCII dungeon crawler for PlayStation 4 & PC.\\n\\nStormcloud has also developed a series of critically acclaimed mobile games based on the works of Japanese origami expert Fumiaki Shingu: Paper Zoo, Paper Ocean, Paper Monster and Paper Pets.\\n\\nPaper Zoo won Best Casual Game (Small Studio) at the TIGA Game Awards and was nominated for a BAFTA Scotland Award.\\n\\nStormcloud developed mobile titles: Room on the Broom, Gruffalo Games, and Gruffalo Puzzles in conjunction with Magic Light Pictures, an Oscar-nominated production company, and based on the best-selling picture books by Julia Donaldson and Axel Scheffler.\\n\\nBoth Room on the Broom and Gruffalo Games were nominated for Childrenâ€™s BAFTA Awards.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.stormcloudgames.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.stormcloudgames.com",
+                                      "url": "http://www.stormcloudgames.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Tag Games",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Tag Games",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/taggames.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "Tag Games specialises in crafting amazing games for tablet and mobile devices. Our expertise covers everything from live, server based free-to-play games to standalone premium titles. Since our formation in 2006 our team of forty dedicated games professionals has built up an impeccable track record of success, delivering projects for some of mobile's biggest publishers alongside our own original IP. Our services include full game development from concept to creation, as well as building optimised ports of console or PC titles for mobile. With a team of dedicated analysts and product managers, we can also manage the server-based live operations phase of your game.",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.tag-games.com",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.tag-games.com ",
+                                      "url": "http://www.tag-games.com/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Waracle",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "local_list",
+                            "text": "Waracle",
+                            "bgnd_color": "#ffffff",
+                            "items": [
+                                      {
+                                      "type": "image_list_item",
+                                      "id": "0000",
+                                      "url": "http://www.martinogg.com/test/newsapp/prod/scottishgames/companylogos/waracle.png",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff"
+                                      },
+                                      {
+                                      "type": "text_list_item",
+                                      "id": "0000",
+                                      "displaytext": "As one of the UKâ€™s leading mobile app development, IoT and digital consulting companies, Waracle understands the way your business responds to â€˜being mobileâ€™ will significantly influence your future success. Operating across the UK and Europe, we have the skills and expertise to help you innovate faster and deliver world class mobile app and IoT capabilities. ",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000"
+                                      },
+                                      {
+                                      "type": "basic_list_item",
+                                      "id": "0000",
+                                      "icon": "unusedIcon.png",
+                                      "text": "www.waracle.net ",
+                                      "use_bgnd_color": false,
+                                      "bgnd_color": "#ffffff",
+                                      "text_color": "#000000",
+                                      "target": {
+                                      "id": "0000",
+                                      "type": "external_url",
+                                      "text": "www.waracle.net",
+                                      "url": "https://waracle.net/"
+                                      }
+                                      }
+                                      ]
+                            }
+                            }
+                            ]
+                  }
+                  },
+                  {
+                  "type": "basic_list_item",
+                  "id": "0000",
+                  "icon": "unusedIcon.png",
+                  "text": "About this App",
+                  "use_bgnd_color": false,
+                  "bgnd_color": "#ffffff",
+                  "text_color": "#000000",
+                  "target": {
+                  "id": "0000",
+                  "type": "local_list",
+                  "text": "About this App",
+                  "bgnd_color": "#ffffff",
+                  "items": [
+                            {
+                            "type": "text_list_item",
+                            "id": "0000",
+                            "displaytext": "Game On Scotland! Is a joint venture between Stand Out Games Studio and Martin Ogg. A simple Android & IOS app, detailing the gaming news around Scotland. From trailers to news to the company directory, we wanted to showcase the best games and game companies from Scotland, in one place.",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000"
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Stand Out Games Studio",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "Stand Out Games Studio",
+                            "url": "http://www.standoutgames.com/"
+                            }
+                            },
+                            {
+                            "type": "basic_list_item",
+                            "id": "0000",
+                            "icon": "unusedIcon.png",
+                            "text": "Developed by Martin Ogg",
+                            "use_bgnd_color": false,
+                            "bgnd_color": "#ffffff",
+                            "text_color": "#000000",
+                            "target": {
+                            "id": "0000",
+                            "type": "external_url",
+                            "text": "Developed by Martin Ogg",
+                            "url": "http://www.martinogg.com"
+                            }
+                            }
+                            ]
                   }
                   }
                   ]

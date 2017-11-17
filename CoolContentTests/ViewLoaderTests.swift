@@ -25,7 +25,7 @@ class ViewLoaderTests: XCTestCase {
         
         class MockRouter: RouterProtocol {
             let uiTestVC = UIViewController.init()
-            func getContentViewController() -> UIViewController {
+            func getContentViewController(viewLoader: ViewLoaderProtocol) -> UIViewController {
                 return uiTestVC
             }
         }
@@ -34,7 +34,7 @@ class ViewLoaderTests: XCTestCase {
         
         let testViewLoader = ViewLoader.init(router: mockRouter)
         
-        guard let dict = ViewLoader.getDictFromFile() else {
+        guard let dict = ViewLoader.getDictFromFile(name: "configtest") else {
             XCTFail()
             return
         }
@@ -51,7 +51,7 @@ class ViewLoaderTests: XCTestCase {
     }
     
     func testGetDictFromFile() {
-        guard let dictToTest = ViewLoader.getDictFromFile() else {
+        guard let dictToTest = ViewLoader.getDictFromFile(name: "configtest") else {
             XCTFail()
             return
         }
@@ -61,7 +61,7 @@ class ViewLoaderTests: XCTestCase {
         XCTAssert(dictToTest["bgnd_color"] as! String == "#ffffff")
         
         let itemsToTest = dictToTest["items"] as! NSArray
-        XCTAssert(itemsToTest.count == 3)
+        XCTAssert(itemsToTest.count == 4)
     }
 
     

@@ -10,20 +10,25 @@ import Foundation
 import UIKit
 
 protocol RouterProtocol {
-    func getContentViewController() -> UIViewController;
+    func getContentViewController(viewLoader: ViewLoaderProtocol) -> UIViewController;
 }
 
 class Router: RouterProtocol {
     
-    func getContentViewController() -> UIViewController {
+    func getContentViewController(viewLoader: ViewLoaderProtocol) -> UIViewController {
         
-        guard let jsonDict = ViewLoader.getDictFromFile() else {
+        guard let jsonDict = ViewLoader.getDictFromFile(name: "config") else {
             fatalError("jsonDict creation fail")
         }
         
         let tableViewAdapter = ContentTableViewAdapter.init(jsonDict)
+        let viewModel = ContentViewModel.init(jsonDict, viewLoader: viewLoader);
         
-        return ContentViewController.init(viewModel: ContentViewModel.init(jsonDict), tableViewAdapter: tableViewAdapter);
+        let viewController = ContentViewController.init(viewModel: viewModel, tableViewAdapter: tableViewAdapter)
+        
+        viewModel.viewContollerDelegate = viewController
+        
+        return viewController;
     }
 
 }

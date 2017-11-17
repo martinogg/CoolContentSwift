@@ -22,18 +22,18 @@ class ContentTableViewTests: XCTestCase {
     }
     
     func testRowCount() {
-        guard let contentDict = ViewLoader.getDictFromFile() else {
+        guard let contentDict = ViewLoader.getDictFromFile(name: "configtest") else {
             XCTFail()
             return
         }
         
          let contentTableViewAdapterToTest = ContentTableViewAdapter.init(contentDict)
         
-        XCTAssert(contentTableViewAdapterToTest.rowCount() == 3)
+        XCTAssert(contentTableViewAdapterToTest.rowCount() == 4)
     }
     
     func testCells() {
-        guard let contentDict = ViewLoader.getDictFromFile() else {
+        guard let contentDict = ViewLoader.getDictFromFile(name: "configtest") else {
             XCTFail()
             return
         }
@@ -50,9 +50,12 @@ class ContentTableViewTests: XCTestCase {
         
         let cell2 = contentTableViewAdapterToTest.cellFor(tableView: mockTableView, indexPath: IndexPath(row: 2, section: 0))
         
+        let cell3 = contentTableViewAdapterToTest.cellFor(tableView: mockTableView, indexPath: IndexPath(row: 3, section: 0))
+        
         XCTAssert(cell0.isKind(of: ImageListItemView.self))
         XCTAssert(cell1.isKind(of: TextListItemView.self))
         XCTAssert(cell2.isKind(of: ImageButtonListItemView.self))
+        XCTAssert(cell3.isKind(of: BasicListItemView.self))
     }
     
 }

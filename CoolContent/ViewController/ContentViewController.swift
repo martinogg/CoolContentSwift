@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
-class ContentViewController: UITableViewController {
+protocol ContentViewControllerDelegate : class {
+    func push(view viewController: UIViewController)
+}
+
+class ContentViewController: UITableViewController, ContentViewControllerDelegate {
     
     var viewModel: ContentViewModelProtocol?
     var tableViewAdapter: ContentTableViewAdapterProtocol?
@@ -40,5 +44,15 @@ class ContentViewController: UITableViewController {
             fatalError()
         }
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.viewModel?.cellTapped(atIndexPath: indexPath);
+    }
+    
+    // delegate
+    func push(view viewController: UIViewController) {
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

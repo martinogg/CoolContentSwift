@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol ViewLoaderProtocol {
+protocol ViewLoaderProtocol : class {
     func getView(withDict dict: Dictionary<String, Any>, callback: ((_ vc: UIViewController) -> Void))
 }
 
@@ -22,17 +22,18 @@ class ViewLoader: ViewLoaderProtocol {
     
     func getView(withDict dict: Dictionary<String, Any>, callback: ((_ vc: UIViewController) -> Void)) {
         
-        callback(router.getContentViewController())        
+        // Todo: Use Dict in here instead
+        callback(router.getContentViewController(viewLoader: self))
     }
     
     static let currentVersion = 3 // V3
     
-    static public func getDictFromFile() -> Dictionary<String, Any>? {
+    static public func getDictFromFile(name: String) -> Dictionary<String, Any>? {
         
         var ret: Dictionary<String, Any>? = nil
         
         do {
-            if let file = Bundle.main.url(forResource: "config", withExtension: "json") {
+            if let file = Bundle.main.url(forResource: name, withExtension: "json") {
                 let data = try Data(contentsOf: file)
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 

@@ -24,8 +24,8 @@ class RouterTests: XCTestCase {
     }
     
     func testGetContentViewController() {
-        
-        let testVC = router.getContentViewController();
+        //TODO
+        //let testVC = router.getContentViewController(viewLoader: );
     }
     
     

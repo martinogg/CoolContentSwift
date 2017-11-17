@@ -17,7 +17,6 @@ protocol ContentTableViewAdapterProtocol : class {
 
 class ContentTableViewAdapter: ContentTableViewAdapterProtocol {
     
-    
     let contentDict: [String: Any]
     
     init(_ contentDict_:[String: Any]) {
@@ -54,7 +53,7 @@ class ContentTableViewAdapter: ContentTableViewAdapterProtocol {
         tableView.register(TextListItemView.self, forCellReuseIdentifier: "text_list_item")
         tableView.register(ImageListItemView.self, forCellReuseIdentifier: "image_list_item")
         tableView.register(ImageButtonListItemView.self, forCellReuseIdentifier: "imagebutton_list_item")
+        tableView.register(BasicListItemView.self, forCellReuseIdentifier: "basic_list_item")
     }
-    
     
 }
