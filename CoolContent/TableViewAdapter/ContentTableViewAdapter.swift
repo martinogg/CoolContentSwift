@@ -12,6 +12,7 @@ import UIKit
 protocol ContentTableViewAdapterProtocol : class {
     func rowCount() -> Int
     func cellFor(tableView: UITableView, indexPath :IndexPath) -> UITableViewCell
+    func registerCellClasses(tableView: UITableView)
 }
 
 class ContentTableViewAdapter: ContentTableViewAdapterProtocol {
@@ -23,19 +24,36 @@ class ContentTableViewAdapter: ContentTableViewAdapterProtocol {
         self.contentDict = contentDict_
     }
     
-    func rowCount() -> Int {
-        guard let items = contentDict["items"] as? NSArray else { return 0 }
+    lazy private var contentItems: NSArray = {
+        guard let items = contentDict["items"] as? NSArray else { fatalError("Item list fail") }
         
-        return items.count
+        return items
+    }()
+    
+    func rowCount() -> Int {
+        return self.contentItems.count
     }
     
     func cellFor(tableView: UITableView, indexPath :IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = "Row \(indexPath.row)"
+        guard let item = self.contentItems[indexPath.row] as? [String: Any],
+        let itemType: String = item["type"] as? String else {
+            fatalError("Item List request fail")
+        }
         
-        return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: itemType, for: indexPath) as? CoolContentListItemProtocol else {
+            fatalError()
+        }
+        
+        cell.configureItem(data: item)
+        
+        return cell as! UITableViewCell
+    }
     
+    func registerCellClasses(tableView: UITableView) {
+        tableView.register(TextListItemView.self, forCellReuseIdentifier: "text_list_item")
+        tableView.register(ImageListItemView.self, forCellReuseIdentifier: "image_list_item")
+        tableView.register(ImageButtonListItemView.self, forCellReuseIdentifier: "imagebutton_list_item")
     }
     
     

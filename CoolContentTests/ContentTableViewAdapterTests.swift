@@ -32,5 +32,27 @@ class ContentTableViewTests: XCTestCase {
         XCTAssert(contentTableViewAdapterToTest.rowCount() == 3)
     }
     
-    //TODO: need to test for cell Returns
+    func testCells() {
+        guard let contentDict = ViewLoader.getDictFromFile() else {
+            XCTFail()
+            return
+        }
+        
+        let contentTableViewAdapterToTest = ContentTableViewAdapter.init(contentDict)
+        
+        let mockTableView = UITableView.init()
+        
+        contentTableViewAdapterToTest.registerCellClasses(tableView: mockTableView)
+        
+        let cell0 = contentTableViewAdapterToTest.cellFor(tableView: mockTableView, indexPath: IndexPath(row: 0, section: 0))
+        
+        let cell1 = contentTableViewAdapterToTest.cellFor(tableView: mockTableView, indexPath: IndexPath(row: 1, section: 0))
+        
+        let cell2 = contentTableViewAdapterToTest.cellFor(tableView: mockTableView, indexPath: IndexPath(row: 2, section: 0))
+        
+        XCTAssert(cell0.isKind(of: ImageListItemView.self))
+        XCTAssert(cell1.isKind(of: TextListItemView.self))
+        XCTAssert(cell2.isKind(of: ImageButtonListItemView.self))
+    }
+    
 }

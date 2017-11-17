@@ -24,7 +24,7 @@ class ContentViewController: UITableViewController {
         super.init(nibName: nil, bundle: nil)
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableViewAdapter.registerCellClasses(tableView: self.tableView)
     }
     
     // UITableViewDelegate and DataSource
