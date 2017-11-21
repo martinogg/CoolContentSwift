@@ -22,8 +22,7 @@ class ViewLoader: ViewLoaderProtocol {
     
     func getView(withDict dict: Dictionary<String, Any>, callback: ((_ vc: UIViewController) -> Void)) {
         
-        // Todo: Use Dict in here instead
-        callback(router.getContentViewController(viewLoader: self))
+        callback(router.getContentViewController(viewLoader: self, config: dict))
     }
     
     static let currentVersion = 3 // V3

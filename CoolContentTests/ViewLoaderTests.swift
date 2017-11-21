@@ -25,7 +25,7 @@ class ViewLoaderTests: XCTestCase {
         
         class MockRouter: RouterProtocol {
             let uiTestVC = UIViewController.init()
-            func getContentViewController(viewLoader: ViewLoaderProtocol) -> UIViewController {
+            func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String : Any]) -> UIViewController {
                 return uiTestVC
             }
         }

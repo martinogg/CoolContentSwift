@@ -24,7 +24,11 @@ class ViewModel: ViewModelProtocol {
     }
     
     func startButtonPressed() {
-        viewLoader.getView(withDict: [String:Any]()) { (vc: UIViewController) in
+        guard let config = ViewLoader.getDictFromFile(name: "config") else {
+            fatalError()
+        }
+        
+        viewLoader.getView(withDict: config) { (vc: UIViewController) in
             self.viewContollerDelegate.push(view: vc);
         }
     }

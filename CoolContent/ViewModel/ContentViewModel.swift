@@ -26,11 +26,11 @@ class ContentViewModel: ContentViewModelProtocol {
     func cellTapped(atIndexPath indexPath: IndexPath) {
         
         if let itemsList: NSArray = self.data["items"] as? NSArray,
-            let target = itemsList[indexPath.row] as? [String: Any] {
+            let item = itemsList[indexPath.row] as? [String: Any],
+            let target = item["target"] as? [String: Any]{
             self.viewLoader.getView(withDict: target) { (newVC) in
                 viewContollerDelegate?.push(view: newVC)
             }
         }
-        
     }
 }
