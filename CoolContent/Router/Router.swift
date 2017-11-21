@@ -18,13 +18,13 @@ class Router: RouterProtocol {
     func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> UIViewController {
         
         let tableViewAdapter = ContentTableViewAdapter.init(config)
-        let viewModel = ContentViewModel.init(config, viewLoader: viewLoader);
+        let viewModel = ContentViewModel.init(config, viewLoader: viewLoader)
         
         let viewController = ContentViewController.init(viewModel: viewModel, tableViewAdapter: tableViewAdapter)
         
         viewModel.viewContollerDelegate = viewController
         
-        return viewController;
+        return viewController
     }
 
 }

@@ -1,0 +1,560 @@
+{
+  "definitions": {
+    "local_list": {
+      "title": "local_list",
+      "description": "= Basic List =",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "local_list"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "text": {
+          "description": "= Top Title Text =",
+          "type": "string"
+        },
+        "bgnd_color": {
+          "type": "string",
+          "format": "color",
+          "title": "background color",
+          "default": "#ffffff"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "title": "Basic Push button with text",
+                "description": "= Basic List Item =",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "basic_list_item"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "id": {
+                    "type": "string",
+                    "enum": [
+                      "0000"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "icon": {
+                    "type": "string",
+                    "enum": [
+                      "unusedIcon.png"
+                    ]
+                  },
+                  "text": {
+                    "type": "string",
+                    "description": "= List Item Text ="
+                  },
+                  "use_bgnd_color": {
+                    "title": "Use Background Color",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false
+                  },
+                  "bgnd_color": {
+                    "type": "string",
+                    "format": "color",
+                    "title": "background color",
+                    "default": "#ffffff"
+                  },
+                  "text_color": {
+                    "type": "string",
+                    "format": "color",
+                    "title": "text color",
+                    "default": "#000000"
+                  },
+                  "target": {
+                    "$ref": "#/definitions/martinObjectsTypeRef"
+                  }
+                },
+                "required": [
+                  "id",
+                  "icon",
+                  "text",
+                  "target",
+                  "type",
+                  "use_bgnd_color",
+                  "bgnd_color",
+                  "text_color"
+                ]
+              },
+              {
+                "title": "ImageButton",
+                "description": "= Image Button List Item =",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "imagebutton_list_item"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "id": {
+                    "type": "string",
+                    "enum": [
+                      "0000"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "url": {
+                    "type": "string",
+                    "default": "http://www.martinogg.com/test/newsapp/pic1.png"
+                  },
+                  "use_bgnd_color": {
+                    "title": "Use Background Color",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false
+                  },
+                  "bgnd_color": {
+                    "title": "background color",
+                    "type": "string",
+                    "format": "color",
+                    "default": "#ffffff"
+                  },
+                  "target": {
+                    "$ref": "#/definitions/martinObjectsTypeRef"
+                  }
+                },
+                "required": [
+                  "type",
+                  "id",
+                  "url",
+                  "bgnd_color",
+                  "use_bgnd_color",
+                  "target"
+                ]
+              },
+              {
+                "title": "Image",
+                "description": "= Image List Item =",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "image_list_item"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "id": {
+                    "type": "string",
+                    "enum": [
+                      "0000"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "url": {
+                    "type": "string",
+                    "default": "http://www.martinogg.com/test/newsapp/pic1.png"
+                  },
+                  "use_bgnd_color": {
+                    "title": "Use Background Color",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false
+                  },
+                  "bgnd_color": {
+                    "title": "background color",
+                    "type": "string",
+                    "format": "color",
+                    "default": "#ffffff"
+                  }
+                },
+                "required": [
+                  "type",
+                  "id",
+                  "url",
+                  "bgnd_color",
+                  "use_bgnd_color"
+                ]
+              },
+              {
+                "title": "Text block",
+                "description": "= Text List Item =",
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "type": {
+                    "type": "string",
+                    "enum": [
+                      "text_list_item"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "id": {
+                    "type": "string",
+                    "enum": [
+                      "0000"
+                    ],
+                    "options": {
+                      "hidden": true
+                    }
+                  },
+                  "displaytext": {
+                    "type": "string",
+                    "default": "A piece of text that will show in the app"
+                  },
+                  "use_bgnd_color": {
+                    "title": "Use Background Color",
+                    "type": "boolean",
+                    "format": "checkbox",
+                    "default": false
+                  },
+                  "bgnd_color": {
+                    "type": "string",
+                    "format": "color",
+                    "title": "background color",
+                    "default": "#ffffff"
+                  },
+                  "text_color": {
+                    "type": "string",
+                    "format": "color",
+                    "title": "text color",
+                    "default": "#000000"
+                  }
+                },
+                "required": [
+                  "type",
+                  "id",
+                  "displaytext",
+                  "use_bgnd_color",
+                  "bgnd_color",
+                  "text_color"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "text",
+        "items",
+        "bgnd_color"
+      ]
+    },
+    "image_list_item": {
+      "description": "= Image List Item =",
+      "title": "image_list_item",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "image_list_item"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "url": {
+          "type": "string",
+          "default": "http://www.martinogg.com/test/newsapp/pic1.png"
+        },
+        "use_bgnd_color": {
+          "title": "Use Background Color",
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false
+        },
+        "bgnd_color": {
+          "title": "background color",
+          "type": "string",
+          "format": "color",
+          "default": "#ffffff"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "url",
+        "bgnd_color",
+        "use_bgnd_color"
+      ]
+    },
+    "text_list_item": {
+      "description": "= Text List Item =",
+      "title": "text_list_item",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "text_list_item"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "displaytext": {
+          "type": "string",
+          "default": "A piece of text that will show in the app"
+        },
+        "use_bgnd_color": {
+          "title": "Use Background Color",
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false
+        },
+        "bgnd_color": {
+          "type": "string",
+          "format": "color",
+          "title": "background color",
+          "default": "#ffffff"
+        },
+        "text_color": {
+          "type": "string",
+          "format": "color",
+          "title": "text color",
+          "default": "#000000"
+        }
+      },
+      "required": [
+        "type",
+        "id",
+        "displaytext",
+        "use_bgnd_color",
+        "bgnd_color",
+        "text_color"
+      ]
+    },
+    "basic_list_item": {
+      "description": "= Basic List Item =",
+      "title": "basic_list_item",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "basic_list_item"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "icon": {
+          "type": "string",
+          "enum": [
+            "unusedIcon.png"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "description": "= List Item Text ="
+        },
+        "use_bgnd_color": {
+          "title": "Use Background Color",
+          "type": "boolean",
+          "format": "checkbox",
+          "default": false
+        },
+        "bgnd_color": {
+          "type": "string",
+          "format": "color",
+          "title": "background color",
+          "default": "#ffffff"
+        },
+        "text_color": {
+          "type": "string",
+          "format": "color",
+          "title": "text color",
+          "default": "#000000"
+        },
+        "target": {
+          "$ref": "#/definitions/martinObjectsTypeRef"
+        }
+      },
+      "required": [
+        "id",
+        "icon",
+        "text",
+        "target",
+        "type",
+        "use_bgnd_color",
+        "bgnd_color",
+        "text_color"
+      ]
+    },
+    "external_url": {
+      "description": "= Fullscreen WebView =",
+      "title": "external_url",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "external_url"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "text": {
+          "type": "string",
+          "description": "= Top Title Text ="
+        },
+        "url": {
+          "type": "string",
+          "default": "https://www.youtube.com/embed/LNHZ9WAertc?rel=0&autoplay=1"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "text",
+        "url"
+      ]
+    },
+    "config_external_url": {
+      "description": "= Config file from HTTP url source =",
+      "title": "config_external_url",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "enum": [
+            "0000"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "config_external_url"
+          ],
+          "options": {
+            "hidden": true
+          }
+        },
+        "url": {
+          "type": "string",
+          "default": "http://www.martinogg.com/test/newsapp/mo1.json"
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "url"
+      ]
+    },
+    "martinObjectsTypeRef": {
+      "type": [
+        {
+          "title": "local_list",
+          "$ref": "#/definitions/local_list"
+        },
+        {
+          "title": "external_url",
+          "$ref": "#/definitions/external_url"
+        },
+        {
+          "title": "config_external_url",
+          "$ref": "#/definitions/config_external_url"
+        }
+      ]
+    }
+  },
+  "title": "root",
+  "type": "object",
+  "properties": {
+    "targetVersion": {
+      "type": "integer",
+      "enum": [
+        3
+      ]
+    },
+    "content": {
+      "$ref": "#/definitions/martinObjectsTypeRef"
+    }
+  },
+  "required": [
+    "targetVersion",
+    "content"
+  ],
+  "additionalProperties": false
+}
