@@ -29,7 +29,8 @@ class ViewController: UIViewController, ViewControllerDelegate {
     
     lazy private var viewModel: ViewModelProtocol = {
         [unowned self] in
-        return ViewModel.init(self, ViewLoader.init(router: Router.init()))
+        let router_ = Router.init()
+        return ViewModel.init(self, ViewLoader.init(router: router_))
     }()
     
     @objc func startButtonPressed() {

@@ -23,9 +23,16 @@ class RouterTests: XCTestCase {
         super.tearDown()
     }
     
-    func testGetContentViewController() {
-        //TODO
-        //let testVC = router.getContentViewController(viewLoader: );
+    func testGetViewForContentView() {
+        
+        let mockRouter = MockRouter.init()
+        
+        let viewLoaderToTest = ViewLoader.init(router: mockRouter)
+        
+        viewLoaderToTest.getView(withDict: [String: Any]()) { (viewController) in
+            XCTAssert(viewController === mockRouter.contentTestVC)
+        }
+        
     }
     
     

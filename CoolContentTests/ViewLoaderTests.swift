@@ -9,6 +9,19 @@
 import XCTest
 @testable import CoolContent
 
+class MockRouter: RouterProtocol {
+    let contentTestVC: ContentViewController = ContentViewController.init(viewModel: nil, tableViewAdapter: nil)
+    let webTestVC: WebViewController = WebViewController.init()
+    
+    func getWebViewController(viewLoader: ViewLoaderProtocol, config: [String : Any]) -> WebViewController {
+        return webTestVC
+    }
+    
+    func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String : Any]) -> ContentViewController {
+        return contentTestVC
+    }
+}
+
 class ViewLoaderTests: XCTestCase {
     
     override func setUp() {
@@ -21,14 +34,29 @@ class ViewLoaderTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSimpleDictRequest() {
+    func testWebViewDictRequest() {
+        let mockRouter = MockRouter.init()
         
-        class MockRouter: RouterProtocol {
-            let uiTestVC = UIViewController.init()
-            func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String : Any]) -> UIViewController {
-                return uiTestVC
-            }
+        let testViewLoader = ViewLoader.init(router: mockRouter)
+        
+        guard let dict = ViewLoader.getDictFromFile(name: "configtestwebview") else {
+            XCTFail()
+            return
         }
+        
+        var callbackCalled = false;
+        
+        testViewLoader.getView(withDict: dict, callback: {(vc: UIViewController) in
+            
+            callbackCalled = true;
+            XCTAssert(vc === mockRouter.webTestVC)
+        });
+        
+        XCTAssert(callbackCalled)
+        
+    }
+    
+    func testContentDictRequest() {
         
         let mockRouter = MockRouter.init()
         
@@ -44,7 +72,7 @@ class ViewLoaderTests: XCTestCase {
         testViewLoader.getView(withDict: dict, callback: {(vc: UIViewController) in
             
             callbackCalled = true;
-            XCTAssert(vc === mockRouter.uiTestVC)
+            XCTAssert(vc === mockRouter.contentTestVC)
         });
         
         XCTAssert(callbackCalled)

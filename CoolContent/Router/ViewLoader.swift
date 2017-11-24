@@ -14,15 +14,24 @@ protocol ViewLoaderProtocol : class {
 }
 
 class ViewLoader: ViewLoaderProtocol {
-    private let router: RouterProtocol;
+    private let router: RouterProtocol
+    private let viewControllers: [String: (ViewLoaderProtocol, [String : Any])-> (UIViewController)]
     
     init(router: RouterProtocol) {
         self.router = router
+        self.viewControllers = ["external_url": router.getWebViewController,
+                                "local_list": router.getContentViewController]
+                                // TODO "config_external_url": router.getWebViewController]
     }
     
     func getView(withDict dict: Dictionary<String, Any>, callback: ((_ vc: UIViewController) -> Void)) {
         
-        callback(router.getContentViewController(viewLoader: self, config: dict))
+        guard let type = dict["type"] as? String,
+            let funcToCall = viewControllers[type] else {
+            return
+        }
+        
+        callback(funcToCall(self, dict))
     }
     
     static let currentVersion = 3 // V3

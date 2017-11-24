@@ -23,6 +23,8 @@
 		EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869D1FBB4AFB002E2890 /* ViewModel.swift */; };
 		EE0986A01FBB4B0A002E2890 /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */; };
 		EE0986A21FBB6D52002E2890 /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = EE0986A11FBB6D52002E2890 /* config.json */; };
+		EE40F56E1FC8436600412C77 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE40F56D1FC8436600412C77 /* WebViewController.swift */; };
+		EE40F5701FC8667C00412C77 /* configtestwebview.json in Resources */ = {isa = PBXBuildFile; fileRef = EE40F56F1FC8667C00412C77 /* configtestwebview.json */; };
 		EEF36F871FBDC1540084C79E /* ContentTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F861FBDC1540084C79E /* ContentTableViewAdapter.swift */; };
 		EEF36F891FBDC18E0084C79E /* ContentTableViewAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */; };
 		EEF36F8C1FBDFA060084C79E /* ImageListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF36F8B1FBDFA060084C79E /* ImageListItemView.swift */; };
@@ -74,6 +76,8 @@
 		EE09869D1FBB4AFB002E2890 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		EE09869F1FBB4B0A002E2890 /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
 		EE0986A11FBB6D52002E2890 /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = config.json; path = config/config.json; sourceTree = "<group>"; };
+		EE40F56D1FC8436600412C77 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		EE40F56F1FC8667C00412C77 /* configtestwebview.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configtestwebview.json; sourceTree = "<group>"; };
 		EEF36F861FBDC1540084C79E /* ContentTableViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewAdapter.swift; sourceTree = "<group>"; };
 		EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewAdapterTests.swift; sourceTree = "<group>"; };
 		EEF36F8B1FBDFA060084C79E /* ImageListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListItemView.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 				EEF36F881FBDC18E0084C79E /* ContentTableViewAdapterTests.swift */,
 				EEF36F951FBF41670084C79E /* configtest.json */,
 				EEF36F981FBF523D0084C79E /* ContentViewModelTests.swift */,
+				EE40F56F1FC8667C00412C77 /* configtestwebview.json */,
 			);
 			path = CoolContentTests;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 			children = (
 				EE0986611FB9D6B9002E2890 /* ViewController.swift */,
 				EE09868F1FBA12A4002E2890 /* ContentViewController.swift */,
+				EE40F56D1FC8436600412C77 /* WebViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 			files = (
 				EEF36F971FBF46250084C79E /* configtest.json in Resources */,
 				EE09866A1FB9D6B9002E2890 /* LaunchScreen.storyboard in Resources */,
+				EE40F5701FC8667C00412C77 /* configtestwebview.json in Resources */,
 				EE0986A21FBB6D52002E2890 /* config.json in Resources */,
 				EE0986671FB9D6B9002E2890 /* Assets.xcassets in Resources */,
 				EE0986651FB9D6B9002E2890 /* Main.storyboard in Resources */,
@@ -366,6 +373,7 @@
 				EEF36F901FBDFA280084C79E /* ImageButtonListItemView.swift in Sources */,
 				EE09869E1FBB4AFB002E2890 /* ViewModel.swift in Sources */,
 				EEF36F8C1FBDFA060084C79E /* ImageListItemView.swift in Sources */,
+				EE40F56E1FC8436600412C77 /* WebViewController.swift in Sources */,
 				EEF36F941FBF3DED0084C79E /* BasicListItemView.swift in Sources */,
 				EEF36F871FBDC1540084C79E /* ContentTableViewAdapter.swift in Sources */,
 			);

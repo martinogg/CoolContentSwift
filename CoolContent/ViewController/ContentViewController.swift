@@ -22,13 +22,13 @@ class ContentViewController: UITableViewController, ContentViewControllerDelegat
         super.init(coder: aDecoder)
     }
     
-    init(viewModel: ContentViewModelProtocol, tableViewAdapter: ContentTableViewAdapterProtocol) {
+    init(viewModel: ContentViewModelProtocol?, tableViewAdapter: ContentTableViewAdapterProtocol?) {
         self.viewModel = viewModel;
         self.tableViewAdapter = tableViewAdapter;
         super.init(nibName: nil, bundle: nil)
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-        tableViewAdapter.registerCellClasses(tableView: self.tableView)
+        tableViewAdapter?.registerCellClasses(tableView: self.tableView)
     }
     
     // UITableViewDelegate and DataSource

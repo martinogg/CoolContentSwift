@@ -10,21 +10,26 @@ import Foundation
 import UIKit
 
 protocol RouterProtocol {
-    func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> UIViewController;
+    func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> ContentViewController;
+    func getWebViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> WebViewController;
 }
 
 class Router: RouterProtocol {
     
-    func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> UIViewController {
+    func getWebViewController(viewLoader: ViewLoaderProtocol, config: [String : Any]) -> WebViewController {
+        // TODO: instantiate this properly
+        return WebViewController.init()
+    }
+    
+    func getContentViewController(viewLoader: ViewLoaderProtocol, config: [String: Any]) -> ContentViewController {
         
         let tableViewAdapter = ContentTableViewAdapter.init(config)
         let viewModel = ContentViewModel.init(config, viewLoader: viewLoader)
-        
         let viewController = ContentViewController.init(viewModel: viewModel, tableViewAdapter: tableViewAdapter)
         
         viewModel.viewContollerDelegate = viewController
         
         return viewController
     }
-
+    
 }
